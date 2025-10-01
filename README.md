@@ -166,3 +166,4 @@ This project demonstrates the complete implementation of rotation matrices and c
               ▼                                ▼                            ▼
         Intrinsics (K)                 Rotation (R)                  Translation (T)
       [fx, fy, cx, cy]        [3×3 orthogonal matrix]              [3×1 vector]
+
