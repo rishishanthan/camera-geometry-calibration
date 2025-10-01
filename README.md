@@ -144,6 +144,8 @@ Example output (result_task2.json):
 This project demonstrates the complete implementation of rotation matrices and camera calibration in Python. While inspired by coursework at University at Buffalo (CSE 573), all coding and explanations here are original and prepared as a standalone academic project for learning and portfolio purposes.
 
 ## 📐 Calibration Pipeline Diagram
+
+<pre>
    3D World Points (X, Y, Z)            Image Points (x, y)
    ┌───────────────────────┐           ┌───────────────────┐
    │ Checkerboard corners   │           │ Detected corners  │
@@ -166,4 +168,6 @@ This project demonstrates the complete implementation of rotation matrices and c
               ▼                                ▼                            ▼
         Intrinsics (K)                 Rotation (R)                  Translation (T)
       [fx, fy, cx, cy]        [3×3 orthogonal matrix]              [3×1 vector]
+</pre>
+
 
