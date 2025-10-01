@@ -148,20 +148,20 @@ This project demonstrates the complete implementation of rotation matrices and c
 <pre>
    3D World Points (X, Y, Z)            Image Points (x, y)
    ┌───────────────────────┐           ┌───────────────────┐
-   │ Checkerboard corners   │           │ Detected corners  │
-   │ on YZ-plane & XZ-plane │           │ (sub-pixel, 32×2) │
+   │ Checkerboard corners  │           │ Detected corners  │
+   │ on YZ-plane & XZ-plane│           │ (sub-pixel, 32×2) │
    └───────────┬───────────┘           └─────────┬─────────┘
                │                               ▲
                ▼                               │
        ┌──────────────────┐   Projection   ┌──────────────┐
-       │  Homogeneous A   │   Matrix M     │ Direct Linear │
-       │   system (DLT)   │ ─────────────▶ │ Transform +   │
-       └──────────────────┘   via SVD      │   SVD solver  │
-                                          └──────────────┘
+       │  Homogeneous A   │   Matrix M     │ Direct Linear│
+       │   system (DLT)   │ ─────────────▶ │ Transform +  │
+       └──────────────────┘   via SVD      │   SVD solver │
+                                           └──────────────┘
                                                    │
                                                    ▼
                                    ┌─────────────────────────┐
-                                   │ Projection Matrix M (3×4)│
+                                   │Projection Matrix M (3×4)│
                                    └───────────┬─────────────┘
                                                │
               ┌────────────────────────────────┼────────────────────────────┐
