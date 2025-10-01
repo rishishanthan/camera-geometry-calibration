@@ -35,7 +35,7 @@ def check_output_format(output, output_name, tp, dimensions=(0,)):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="CSE 473/573 project Geometry submission.")
+    parser = argparse.ArgumentParser(description="Project Geometry submission.")
     parser.add_argument("--ubit", type=str)
     args = parser.parse_args()
     return args
@@ -69,7 +69,7 @@ def files2zip(files: list, zip_file_name: str):
 
 if __name__ == "__main__":
     args = parse_args()
-    file_list = ['UB_Geometry.py', 'result_task1.json', 'result_task2.json']
+    file_list = ['Geometry.py', 'result_task1.json', 'result_task2.json']
     res = files2zip(file_list, 'submission_' + args.ubit + '.zip')
     if not res:
         print('Zipping failed.')
