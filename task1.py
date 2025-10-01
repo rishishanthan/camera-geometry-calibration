@@ -9,11 +9,11 @@ import argparse
 import cv2
 import json
 import numpy as np
-from UB_Geometry import findRot_xyz2XYZ, findRot_XYZ2xyz
+from Geometry import findRot_xyz2XYZ, findRot_XYZ2xyz
 from helper import check_output_format
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="CSE 473/573 project Geometry.")
+    parser = argparse.ArgumentParser(description="Project Geometry.")
     parser.add_argument("--alpha", type=float, default=45)
     parser.add_argument("--beta",  type=float, default=30)
     parser.add_argument("--gamma", type=float, default=50)
