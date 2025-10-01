@@ -106,7 +106,8 @@ Given an image of a 3D checkerboard, estimate:
   - Orthonormalize R with SVD → final rotation R.
 
 Results
-Example output (result_task2.json):
+Example output:
+```json
 {
   "fx": 16.05,
   "fy": 12.96,
@@ -119,6 +120,7 @@ Example output (result_task2.json):
   ],
   "T": [-3.4875, 6.8306, 41.5674]
 }
+```
 
 #### Intrinsics (fx, fy, cx, cy):
   - Values are small for fx/fy due to DLT scale ambiguity, but consistent with theory.
