@@ -8,7 +8,7 @@ import sys
 import cv2
 import json
 import numpy as np
-from UB_Geometry import find_corner_img_coord, find_corner_world_coord, find_intrinsic, find_extrinsic
+from Geometry import find_corner_img_coord, find_corner_world_coord, find_intrinsic, find_extrinsic
 from helper import show_image, check_output_format
 
 
